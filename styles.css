@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.timer-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;           /* Use flex to manage children */
+    flex-direction: column;  /* Stack children vertically */
+    align-items: center;     /* Align children like the timer and buttons in the center */
+}
+
+#timerDisplay {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px; /* Add some space between the timer and the buttons */
+}
+
+.buttons-container { /* New container for buttons */
+    display: flex;
+    justify-content: space-around; /* Space buttons out nicely */
+    width: 100%; /* Full width to allow space around */
+}
+
+#btnShootSelf, #btnShootEnemy { /* Styling for each button */
+    padding: 10px 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnShootSelf:hover, #btnShootEnemy:hover { /* Hover effect for buttons */
+    background-color: #0056b3;
+}
+
+#gameStatus {
+        font-size: 24px;
+        color: #666;
+        margin-bottom: 20px;
+}
+
+#imageHolder {
+    text-align: center; /* Centering the image */
+    margin-top: 20px;
+}
